@@ -14,8 +14,10 @@ define( 'C3PO_FEATURED_IMAGES_PATH', plugin_dir_path( __FILE__ ) );
 define( 'C3PO_FEATURED_IMAGES_URL', plugin_dir_url( __FILE__ ) );
 
 
-function c3po_core_required_notice() {
-	echo '<div class="error notice"><p>El plugin precisa del C3PO CORE para su correcto funcionamiento.</p></div>';
+if( function_exists('c3po_core_required_notice') ){
+	function c3po_core_required_notice() {
+		echo '<div class="error notice"><p>El plugin precisa del C3PO CORE para su correcto funcionamiento.</p></div>';
+	}
 }
 
 // Comprobamos que el CORE esté instalado
