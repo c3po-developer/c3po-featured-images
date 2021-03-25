@@ -64,7 +64,7 @@ function create_c3po_featured_images_options_metabox() {
 		'title'        => 'Imágenes destacadas',
 		'object_types' => array( 'options-page' ),
 		'option_key'      => 'c3po_featured_images_options', // The option key and admin menu page slug.
-		'parent_slug'     => 'c3po_options', // Make options page a submenu item of the themes menu.
+		'parent_slug'     => 'c3po_core_options', // Make options page a submenu item of the themes menu.
 	) );
 
 	$cmb_options->add_field( array(
